@@ -1,0 +1,19 @@
+#  this is basically a python lang programming to display maximum hours done by a person
+mylist=[("peter",100),("john",200),("michael",50)]
+def good(mylist):
+    
+    current_max  = 0;
+    employee_of_month = ""
+
+    for employee,hours in mylist:
+        
+        if hours > current_max :
+            current_max = hours
+            employee_of_month = employee
+        else:
+            pass
+    return(employee_of_month,current_max)
+
+# calling a function
+good(mylist)
+('john', 200)
